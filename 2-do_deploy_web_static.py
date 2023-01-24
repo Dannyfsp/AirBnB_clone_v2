@@ -5,7 +5,7 @@ Fabric script to distribute an archive to web servers
 from fabric.api import *
 import os.path
 
-env.hosts = ['18.234.126.129', '54.89.117.18']
+env.hosts = ['18.234.168.129', '54.89.117.18']
 env.user = 'ubuntu'
 env.key_filename = "~/.ssh/school"
 
