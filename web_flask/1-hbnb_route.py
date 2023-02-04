@@ -15,6 +15,7 @@ def index():
     '''The home page'''
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb')
 def hbnb():
     '''The hbnb page'''
