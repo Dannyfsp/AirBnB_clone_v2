@@ -1,4 +1,5 @@
 # AirBnB clone - Web framework
+![serverside image](https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step3.png)
 ## Concepts
 *For this project, we expect you to look at this concept:*
 - [AirBnB clone](https://intranet.alxswe.com/concepts/74)
