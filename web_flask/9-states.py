@@ -8,6 +8,12 @@ from models.state import State
 app = Flask(__name__)
 
 
+@app.teardown_appcontext
+def close(self):
+    """ Method to close the session """
+    storage.close()
+
+
 @app.route('/states', strict_slashes=False)
 def state():
     """Displays a html page with states"""
@@ -22,12 +28,6 @@ def state_by_id(id):
         if state.id == id:
             return render_template('9-states.html', states=state, mode='id')
     return render_template('9-states.html', states=state, mode='none')
-
-
-@app.teardown_appcontext
-def close():
-    """Method to close the session"""
-    storage.close()
 
 
 if __name__ == '__main__':
