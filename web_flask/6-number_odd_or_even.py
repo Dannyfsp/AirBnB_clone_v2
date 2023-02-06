@@ -48,7 +48,7 @@ def number_template(n=None):
         return render_template('5-number.html', n=n)
 
 
-@app.route('/number_odd_or_even/<n>')
+@app.route('/number_odd_or_even/<int:n>')
 def number_odd_or_even(n=None):
     '''The number_odd_or_even page'''
     if isinstance(n, int):
